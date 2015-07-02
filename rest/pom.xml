@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jo.spring</groupId>
+    <artifactId>rest</artifactId>
+    <packaging>war</packaging>
+    <version>0.1.0</version>
+
+    <parent>
+        <groupId>jo.spring</groupId>
+        <artifactId>spring</artifactId>
+        <version>0.1.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 不使用内嵌的Web容器，而使用外部Web容器时，才需要这个依赖。（使用外部Web容器，则只能打包成war）
+        	注：使用 mvn spring-boot:run 启动应用时，总是使用内嵌Web容器，而不管是否有配置这个依赖。 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
