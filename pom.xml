@@ -24,6 +24,16 @@
         <module>rest</module>
     </modules>
 
+    <dependencies>
+        <!-- 通过标注来自动生成getter、setter、toString、equals、hashCode等的框架 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- 不管是打包成可执行的jar或war，都可以通过 mvn spring-boot:run 来在内嵌的Web容器中启动应用 -->
