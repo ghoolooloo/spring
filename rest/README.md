@@ -27,3 +27,7 @@ RestTemplate 将JSON 转换成 Quote 对象，并输出到日志。
 这个例子使用了 CommandLineRunner，日志将在启动应用时输出：
 
 > 2015-07-03 11:30:07.794  INFO 4060 --- [lication.main()] j.s.rest.consumingrest.ConsumingRest     : Quote(type=success, value=Value(id=5, quote=Spring Boot solves this problem. It gets rid of XML and wires up common components for me, so I don't have to spend hours scratching my head just to figure out how it's all pie ced together.))
+
+# .jpa
+
+演示了通过 hypermedia-based RESTful 前端来访问 JPA 数据。
